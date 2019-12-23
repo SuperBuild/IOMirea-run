@@ -1,0 +1,116 @@
+@charset "utf-8";
+/* CSS Document */
+html{
+	height: 100%;
+	width: 100%;
+}
+
+body{
+	margin-top: -10px;
+	margin-left: 0px;
+	height: 80%;
+	width: inherit;
+}
+
+#output{
+	position: relative;
+	top:0px;
+	height: 120px;
+	background-color: #DBDBDB;
+	border-radius: 15px;
+	padding-left: 30px;
+	padding-top: 0px;
+	border: 2px groove #ff6f2c;
+}
+
+
+.info{
+	display: block;
+	position: absolute;
+	font-size: 20px;
+	text-align: center;
+	top:65px;
+	right: 0px;
+	background-color: white;
+	width: 26%;
+	height: 600px;
+	border-right: 2px outset #F5954C;
+	border-bottom: 2px outset #F5954C;
+	border-left: 2px outset #F5954C;
+	border-radius: 15px;
+	box-shadow: -7px 7px 28px -12px rgba(0,0,0,0.66);
+}
+
+.h{
+	display: none !important;
+}
+
+
+
+#tab{
+	box-shadow: 0px -55px 12px -61px rgba(0,0,0,1);
+	background-color: #FFFFFF;
+	padding: 10px;
+	margin-top: -15px;
+	border-top: 0px;
+	border-radius: 15px;
+	height: 100%;
+	margin-left:0;
+	display:block;
+}
+
+
+
+header{
+	background: linear-gradient(10deg, rgba(115,17,235,1) 0%, rgba(253,100,29,1) 19%, rgba(252,176,69,1) 100%);
+	width: inherit;
+	height: 90px;
+	overflow: hidden;
+}
+
+
+
+#headlogo{
+	margin: 10px;
+	font-size: 30px;
+}
+
+#logo{
+	width: 55px;
+	margin-top: 15px;
+
+}
+
+#run{
+	display:inline-block;
+	font-weight:700;
+	padding:.5em 2em;
+	outline:0;
+	border:2px outset #ff6f2c;
+	border-radius:10px;
+	transition:.2s;
+	background: linear-gradient(45deg, rgba(115,17,235,1) 0%, rgba(253,100,29,1) 19%, rgba(252,176,69,1) 100%);
+	position: relative;
+	left: 19px;
+	width: 100px;
+	height: 35px;
+	font-size: 15px;
+	border-bottom: none;
+	border-bottom-right-radius: 0px;
+	border-bottom-left-radius: 0px;
+}
+#run:hover{
+	border:2px inset #ff6f2c;
+	background: linear-gradient(45deg, rgba(57,0,128,1) 0%, rgba(222,76,8,1) 25%, rgba(199,120,8,1) 100%);
+	border-bottom: none;
+	border-bottom-right-radius: 0px;
+	border-bottom-left-radius: 0px;
+}
+#run:active{
+	border:0px;
+	background: linear-gradient(45deg, rgba(57,0,128,1) 0%, rgba(222,76,8,1) 25%, rgba(199,120,8,1) 100%);
+	border-bottom: none;
+	border-bottom-right-radius: 0px;
+	border-bottom-left-radius: 0px;
+}
+
