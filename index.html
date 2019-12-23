@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>IOMirea-run</title>
+	<link rel="stylesheet" type="text/css" href="src/css/Styleproject.css">
+	<link rel="stylesheet" type="text/css" href="src/css/StyleAce.css">
+	<link rel="stylesheet" type="text/css" href="src/css/Bookmark.css">
+	<script src="jquery-3.4.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+	<script src="src/js/show_info.js" type="text/javascript" charset="utf-8"></script>
+	<script src="src/js/run_code.js" type="text/javascript" charset="utf-8"></script>
+	<script src="src/js/languages_setup.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+	<header>
+		<span id=headlogo><img id=logo src="src/css/logo.png"></span>
+		<span class="bmbg first">
+			<div class="bm first">Iomirea compiler</div>
+		</span>
+		<span class="bmbg second"  onclick="showinfo()">
+			<div class="bm second" id="bm">Info</div>
+		</span>		
+	</header>
+	<div id="tab">
+		<select id="select_language" onchange="change_language()">
+		</select>
+		<pre id="editor" class="ed1">
+		</pre>
+		<button id="run" onclick="run()">Run</button>
+		<div id="output">
+			<h3 id="wait"></h3><h4 id="stdout1">STDOUT:
+			</h4><h6 id="stdout"></h6><h4 id="stderr">STDERR:</h4>
+			<h4 id="exec_time">EXEC_TIME:</h4><h4 id="exit_code">EXIT_CODE:</h4>	
+		</div>
+	</div>
+	<div class="info h" id="info">
+		<br>
+		<br>
+		<br>
+		<br>
+		Contact frontend <img src="" href=''>
+		<br>
+		Contact backend <img src="" href=''>
+		<br>
+		Our github <img src="" href=''>
+		<br>
+		Powered by Ace Editor <a href="https://ace.c9.io/" target="_blank"><img src="src/css/ace-logo.png" width="50">
+	</div>
+
+	<script type="text/javascript">
+    		var editor = ace.edit("editor", {
+        		theme: "ace/theme/tomorrow_night_eighties",
+        		mode: "ace/mode/python",
+        		wrap: true,
+        		autoScrollEditorIntoView: true
+    		});
+    		get_languages();
+	</script>
+</body>
+</html>
